@@ -1,0 +1,32 @@
+<div
+              className="line-numbers mt-1 overflow-y-auto text-gray-500 border-r border-gray-600"
+              onScroll={handleScrollFirst}
+              ref={firstDivRef}
+            >
+              {lineNumbers.map((num) => (
+                <div key={num} className={num === currentLine ? "font-bold" : ""}>
+                  {num}
+                </div>
+              ))}
+            </div>
+
+            <textarea
+              id="code"
+              onScroll={handleScrollSecond}
+              ref={(el) => {
+                secondDivRef.current = el;
+                inputRef.current = el;
+              }}
+              onKeyDown={(e) => {
+                handleKeyDownLocal(e);
+                handleKeyDown(e);
+              }}
+              rows={lines}
+              value={texteditor}
+              onChange={(e) => {
+                handleLineChange(e);
+                handleTextAreaChange();
+              }}
+              className="editor_class mt-1 multi-input p-1 col-10 bg-slate-100 focus:outline-none"
+            />
+          </div>

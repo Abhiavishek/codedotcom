@@ -1,0 +1,103 @@
+/* Login.css */
+
+.input_box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin: 1rem 0.5rem;
+  }
+  
+  .input_box input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    outline: none;
+  }
+  
+  /* Styling for the phone number section */
+  .phone_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone_section button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Styling for the OTP section */
+  .otp_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp_section button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Styling for the Google Sign-in section */
+  .google_signin {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .google_signin button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .google_signin img {
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
+  /* Styling for the "Or?" text */
+  .or_text {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  /* Additional styling for the container */
+  .container {
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .m-1 {
+    display: inline-block;
+    margin: 0.25rem;
+    color: black;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  
